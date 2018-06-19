@@ -1,0 +1,6 @@
+#!/bin/rc
+
+f=$HOME/Pictures/Screenshots/`{date -n}^.png
+topng </dev/screen >$f
+hpost -u http://f.kotori.me randomname:'yes' file@$f | rc
+echo
